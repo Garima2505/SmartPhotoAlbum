@@ -4,8 +4,9 @@ phases:
     commands:
       - pip install requests
       - pip install requests-aws4auth
-      - aws cloudformation package --template-file template.yaml --s3-bucket lambda-voice-album --output-template-file packaged-template.yml
+      - aws cloudformation package --template-file template.yml --s3-bucket lambda-voice-album --output-template-file packaged-template.yml
 artifacts:
+  type: zip
   files:
     - packaged-template.yml
     - template.yaml

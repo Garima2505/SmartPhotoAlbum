@@ -7,6 +7,7 @@ Resources:
       Handler: LF1.lambda_handler
       Runtime: python3.7
       CodeUri: ./lambdas/
+
   LF2Function:
     Type: AWS::Serverless::Function
     Properties:
