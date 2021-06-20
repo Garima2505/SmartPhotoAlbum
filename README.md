@@ -54,7 +54,7 @@ search the “photos” ElasticSearch index for results, and return them accordi
   * Upload the frontend files to the bucket (B2).
   * Integrate the API Gateway-generated SDK (SDK1) into the frontend, to connect your API.
 
-5. Deploy your code using AWS CodePipeline1
+5. Deploy your code using AWS CodePipeline
 6. Create a AWS CloudFormation template for the stack
 
 
