@@ -44,7 +44,7 @@ Use the following schema for the JSON object: <br>
 search the “photos” ElasticSearch index for results, and return them accordingly (as per the API spec).
     - Otherwise, return an empty array of results (as per the API spec).
     
- 4. Frontend
+ 4. [Frontend](https://github.com/Garima2505/VoiceSearchPhotoAlbum-Frontend)
   * Build a simple frontend application that allows users to:
     - Make search requests to the GET /search endpoint
     - Display the results (photos) resulting from the query
