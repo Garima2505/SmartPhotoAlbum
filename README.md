@@ -24,11 +24,11 @@ Use the following schema for the JSON object: <br>
    &nbsp; &nbsp; “objectKey”: “my-photo.jpg”, <br>
    &nbsp; &nbsp; “bucket”: “my-photo-bucket”, <br>
    &nbsp; &nbsp; “createdTimestamp”: “2018-11-05T12:40:02”,<br>
-   &nbsp;&nbsp;&nbsp; “labels”: [<br>
-   &nbsp;&nbsp;&nbsp;&nbsp;  “person”, <br>
-   &nbsp;&nbsp;&nbsp;&nbsp;  “dog”, <br>
-   &nbsp;&nbsp;&nbsp;&nbsp; “ball”, <br>
-   &nbsp;&nbsp;&nbsp;&nbsp;  “park” <br>
-   &nbsp;&nbsp;&nbsp;         ] <br>
+   &nbsp; &nbsp; &nbsp; “labels”: [<br>
+   &nbsp; &nbsp; &nbsp; &nbsp;  “person”, <br>
+   &nbsp; &nbsp; &nbsp; &nbsp;  “dog”, <br>
+   &nbsp; &nbsp; &nbsp; &nbsp; “ball”, <br>
+   &nbsp; &nbsp; &nbsp; &nbsp;  “park” <br>
+   &nbsp; &nbsp; &nbsp;         ] <br>
   &nbsp; } <br>
 
