@@ -12,11 +12,11 @@ S3, Lex, ElasticSearch, Rekognition, Lambda function, CodePipeline,  CloudFormat
 
 2. Upload & index photos
   <ul>
-    <li>* Create a S3 bucket (B2) to store the photos.</li>
-    <li>* Create a Lambda function (LF1) called “index-photos”.</li>
-    <li>* Set up a PUT event trigger on the photos S3 bucket (B2), such that whenever a photo gets uploaded to the bucket, it triggers the Lambda function (LF1) to index it.</li>
-    <li>* Implement the indexing Lambda function (LF1):
-    <ul>
+    <li> Create a S3 bucket (B2) to store the photos.</li>
+    <li> Create a Lambda function (LF1) called “index-photos”.</li>
+    <li> Set up a PUT event trigger on the photos S3 bucket (B2), such that whenever a photo gets uploaded to the bucket, it triggers the Lambda function (LF1) to index it.</li>
+    <li> Implement the indexing Lambda function (LF1):
+    <ul, style="list-style-type:square;">
       <li> Given a S3 PUT event (E1) detect labels in the image, using Rekognition (“detectLabels” method). </li>
       <li> Store a JSON object in an ElasticSearch index (“photos”) that references the S3 object from the PUT event (E1) and an array of string labels, one for each label detected by Rekognition. </li>
    </ul>
