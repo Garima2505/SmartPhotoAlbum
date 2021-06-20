@@ -46,9 +46,9 @@ search the “photos” ElasticSearch index for results, and return them accordi
     
  4. [Frontend](https://github.com/Garima2505/VoiceSearchPhotoAlbum-Frontend)
   * Build a simple frontend application that allows users to:
-    - Make search requests to the GET /search endpoint
-    - Display the results (photos) resulting from the query
-    - Upload new photos using the PUT /photos
+      - Make search requests to the GET /search endpoint
+      - Display the results (photos) resulting from the query
+      - Upload new photos using the PUT /photos
   * Create a S3 bucket for your frontend (B1).
   * Set up the bucket for static website hosting (same as HW1).
   * Upload the frontend files to the bucket (B2).
