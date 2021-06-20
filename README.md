@@ -8,16 +8,17 @@ S3, Lex, ElasticSearch, Rekognition, Lambda function, CodePipeline,  CloudFormat
 
 ### Implementation
 
-1. Launch an ElasticSearch instance1
-  1.1 Using AWS ElasticSearch service , create a new domain called “photos”.
+1. Launch an ElasticSearch instance1 using AWS ElasticSearch service , create a new domain called “photos”.
 
 2. Upload & index photos
   * Create a S3 bucket (B2) to store the photos.
   * Create a Lambda function (LF1) called “index-photos”.
   * Set up a PUT event trigger on the photos S3 bucket (B2), such that whenever a photo gets uploaded to the bucket, it triggers the Lambda function (LF1) to index it.
   * Implement the indexing Lambda function (LF1):
-    - Given a S3 PUT event (E1) detect labels in the image, using Rekognition (“detectLabels” method). 
-    - Store a JSON object in an ElasticSearch index (“photos”) that references the S3 object from the PUT event (E1) and an array of string labels, one for each label detected by Rekognition.
+  <ul>
+    <li> Given a S3 PUT event (E1) detect labels in the image, using Rekognition (“detectLabels” method). </li>
+    <li> Store a JSON object in an ElasticSearch index (“photos”) that references the S3 object from the PUT event (E1) and an array of string labels, one for each label detected by Rekognition. </li>
+  </ul>
 
 Use the following schema for the JSON object: <br>
   &nbsp;{ <br>
