@@ -20,8 +20,8 @@ S3, Lex, ElasticSearch, Rekognition, Lambda function, CodePipeline,  CloudFormat
     - Store a JSON object in an ElasticSearch index (“photos”) that references the S3 object from the PUT event (E1) and an array of string labels, one for each label detected by Rekognition.
 
 Use the following schema for the JSON object:
-  { /n
-    “objectKey”: “my-photo.jpg”,//n
+  &nbsp;{ /n
+   &nbsp; “objectKey”: “my-photo.jpg”,//n
     “bucket”: “my-photo-bucket”,/n
     “createdTimestamp”: “2018-11-05T12:40:02”,\\n
   “labels”: [
