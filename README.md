@@ -12,8 +12,8 @@ S3, Lex, ElasticSearch, Rekognition, Lambda function, CodePipeline,  CloudFormat
   1.1 Using AWS ElasticSearch service , create a new domain called “photos”.
 
 2. Upload & index photos
-  2.1 Create a S3 bucket (B2) to store the photos.
-  2.2 Create a Lambda function (LF1) called “index-photos”.
+  1) Create a S3 bucket (B2) to store the photos.
+  2) Create a Lambda function (LF1) called “index-photos”.
   2.3 Set up a PUT event trigger on the photos S3 bucket (B2), such that whenever a photo gets uploaded to the bucket, it triggers the Lambda function (LF1) to index it.
   2.4 Implement the indexing Lambda function (LF1):
     * Given a S3 PUT event (E1) detect labels in the image, using Rekognition (“detectLabels” method). 
