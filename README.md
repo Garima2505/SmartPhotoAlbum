@@ -1,3 +1,6 @@
 # SmartPhoto
 
-A pisco sour is a cocktail typical of South American cuisine. The drink's name is a combination of the word pisco, which is its base liquor, and the term sour, in reference to sour citrus juice and sweetener components. Chile and Peru both claim the pisco sour as their national drink, and each asserts exclusive ownership of both pisco and the cocktail. The Peruvian pisco sour uses Peruvian pisco as the base liquor and adds Key lime (or lemon) juice, syrup, ice, egg white, and Angostura bitters. The Chilean version is similar, but uses Chilean pisco and limón de Pica, and excludes the bitters and egg white. The cocktail was invented by Victor Vaughen Morris, an American bartender working in Peru in the early 1920s. In Chile, the invention of the drink is attributed to Elliot Stubb, an English ship steward, at a bar in the port city of Iquique in 1872, although the source for this attributed the invention of the whiskey sour to Stubb, not the pisco sour. The two kinds of pisco and the two variations in the style of preparing the pisco sour are distinct in both production and taste, and the pisco sour has become a significant and oft-debated topic of Latin American popular culture. (Full article...)
+Implemented a photo album web application, that can be searched using natural language through both text and voice. Created an intelligent search layer to query your photos for people, objects, actions, landmarks and more.
+
+# Technology Use:
+S3, Lex, ElasticSearch, Rekognition, Lambda function, CodePipeline,  CloudFormation and API Gateway
