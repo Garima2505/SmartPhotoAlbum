@@ -4,7 +4,7 @@ Implemented a photo album web application, that can be searched using natural la
 S3, Lex, ElasticSearch, Rekognition, Lambda function, CodePipeline,  CloudFormation and API Gateway
 
 ### Architecture
-![image1](/Images/architecture.jpg)
+![image1](/Images/architecture1.jpg)
 
 ### Implementation
 
