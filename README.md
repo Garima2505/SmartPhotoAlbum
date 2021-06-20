@@ -21,9 +21,9 @@ S3, Lex, ElasticSearch, Rekognition, Lambda function, CodePipeline,  CloudFormat
 
 Use the following schema for the JSON object:
   { /n
-    “objectKey”: “my-photo.jpg”,/n
+    “objectKey”: “my-photo.jpg”,//n
     “bucket”: “my-photo-bucket”,/n
-    “createdTimestamp”: “2018-11-05T12:40:02”,\n
+    “createdTimestamp”: “2018-11-05T12:40:02”,\\n
   “labels”: [
     “person”,
     “dog”,
