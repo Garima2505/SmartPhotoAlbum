@@ -19,22 +19,24 @@ S3, Lex, ElasticSearch, Rekognition, Lambda function, CodePipeline,  CloudFormat
     <ul style="list-style-type:square;">
       <li> Given a S3 PUT event (E1) detect labels in the image, using Rekognition (“detectLabels” method). </li>
       <li> Store a JSON object in an ElasticSearch index (“photos”) that references the S3 object from the PUT event (E1) and an array of string labels, one for each label detected by Rekognition. </li>
-   </ul>
+   
+  
+    <li>Use the following schema for the JSON object: <br>
+    &nbsp;{ <br>
+    &nbsp; &nbsp; “objectKey”: “my-photo.jpg”, <br>
+    &nbsp; &nbsp; “bucket”: “my-photo-bucket”, <br>
+    &nbsp; &nbsp; “createdTimestamp”: “2018-11-05T12:40:02”,<br>
+    &nbsp; &nbsp; “labels”: [<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; “person”, <br>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; “dog”, <br>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; “ball”, <br>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; “park” <br>
+    &nbsp; &nbsp;         ] <br>
+    &nbsp; } <br>
+    </li>
+    </ul>
    </li>
   </ul>
-Use the following schema for the JSON object: <br>
-  &nbsp;{ <br>
-   &nbsp; &nbsp; “objectKey”: “my-photo.jpg”, <br>
-   &nbsp; &nbsp; “bucket”: “my-photo-bucket”, <br>
-   &nbsp; &nbsp; “createdTimestamp”: “2018-11-05T12:40:02”,<br>
-   &nbsp; &nbsp; “labels”: [<br>
-   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; “person”, <br>
-   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; “dog”, <br>
-   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; “ball”, <br>
-   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; “park” <br>
-   &nbsp; &nbsp;         ] <br>
-  &nbsp; } <br>
-
 3. Search
   * Create a Lambda function (LF2) called “search-photos”.
   * Create an Amazon Lex bot to handle search queries.
