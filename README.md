@@ -27,8 +27,34 @@ Use the following schema for the JSON object: <br>
    &nbsp; &nbsp; “labels”: [<br>
    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; “person”, <br>
    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; “dog”, <br>
-   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;“ball”, <br>
+   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; “ball”, <br>
    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; “park” <br>
    &nbsp; &nbsp;         ] <br>
   &nbsp; } <br>
+
+3. Search
+  * Create a Lambda function (LF2) called “search-photos”.
+  * Create an Amazon Lex bot to handle search queries.
+    - Create one intent named “SearchIntent”.
+    - Add training utterances to the intent, such that the bot can pick up both keyword searches (“trees”, “birds”), as well as sentence searches (“show me trees”, “show me photos with trees and birds in them”).
+
+  * Implement the Search Lambda function (LF2):
+    - Given a search query “q”, disambiguate the query using the Amazon Lex bot.
+    _ If the Lex disambiguation request yields any keywords (K1, …, Kn),
+search the “photos” ElasticSearch index for results, and return them accordingly (as per the API spec).
+    - Otherwise, return an empty array of results (as per the API spec).
+    
+ 4. Frontend
+  * Build a simple frontend application that allows users to:
+    - Make search requests to the GET /search endpoint
+    - Display the results (photos) resulting from the query
+    - Upload new photos using the PUT /photos
+  * Create a S3 bucket for your frontend (B1).
+  * Set up the bucket for static website hosting (same as HW1).
+  * Upload the frontend files to the bucket (B2).
+  * Integrate the API Gateway-generated SDK (SDK1) into the frontend, to connect your API.
+
+5. Deploy your code using AWS CodePipeline1
+6. Create a AWS CloudFormation template for the stack
+
 
