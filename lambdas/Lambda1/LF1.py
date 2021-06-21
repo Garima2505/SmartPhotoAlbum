@@ -12,7 +12,7 @@ esHost = 'https://search-stored-photo-xj4dq7fv4a7m5oy77dlqxlhngm.us-east-1.es.am
 region = 'us-east-1'
 service = 'es'
 credentials = boto3.Session().get_credentials()
-awsauth = AWS4Auth("AKIAQSSIXV5QNL63XZMC", "pE2d20qssrSpD+B7S9XSy/+I52bp7EtJ/o2oz9rO", region, service, session_token=None)
+awsauth = AWS4Auth("", "", region, service, session_token=None)
 
 def detect_labels(bucket_name, key):
     rekognition_client = boto3.client('rekognition')
