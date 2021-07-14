@@ -8,7 +8,7 @@ from requests_aws4auth import AWS4Auth
 #logger = logging.getLogger()
 #logger.setLevel(logging.DEBUG)
 
-esHost = 'https://search-stored-photo-xj4dq7fv4a7m5oy77dlqxlhngm.us-east-1.es.amazonaws.com'
+esHost = "elastic-search-enpoint"
 region = 'us-east-1'
 service = 'es'
 credentials = boto3.Session().get_credentials()
